@@ -1,0 +1,8 @@
+#player-select-page {
+    height: 100vh;
+    margin: 0;
+    background: url('../img/select-page-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
