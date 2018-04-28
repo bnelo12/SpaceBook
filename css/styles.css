@@ -1,5 +1,6 @@
 body {
     background-color: black !important;
+    overflow: hidden;
 }
 
 audio {
@@ -12,6 +13,7 @@ audio {
 
 #logo-page {
     background-color: #4a65a0;
+    overflow: visible;
 }
 
 #logo {
@@ -83,14 +85,14 @@ audio {
 
 #falcon-heavy-logo-page {
     height: 600px;
-    bottom: -35px;
+    bottom: -25px;
     right: 100px;
     position: absolute;
 }
 
 #new-shepard-logo-page {
     height: 100%;
-    bottom: 0px;
+    bottom: -35px;
     right: 300px;
     position: absolute;
 }
@@ -105,13 +107,7 @@ audio {
 
 #exposition-page {
     background-color: black;
-}
-
-#player-select-page .background-image {
-    background: url('../img/select-page-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
+    display: none;
 }
 
 #rocket-select {
@@ -119,6 +115,12 @@ audio {
     right: 20px;
     bottom: 0px;
     height: 75%
+}
+
+#earth-image {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(-50wh);
 }
 
 .full-screen {
