@@ -2,6 +2,10 @@ body {
     background-color: black !important;
 }
 
+audio {
+    display: none;
+}
+
 #player-select-page {
     background-color: black;
 }
@@ -15,10 +19,27 @@ body {
     left: 110px;
 }
 
+#countdown-button {
+    padding: 40px;
+    border-radius: 120px;
+    background-color: transparent;
+    opacity: 0;
+    transition:.5s;
+}
+
+#countdown-button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
 .select-company-button {
     padding: 40px;
     border-radius: 120px;
     background-color: transparent;
+}
+
+.select-company-button:hover {
+    cursor: pointer;
 }
 
 #starfield {

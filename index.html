@@ -2,10 +2,9 @@
 <html lang="en">
     <head>
         <title>Spacebook</title>
-        <link rel="stylesheet" href="css/styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
@@ -26,21 +25,26 @@
                 <i class="material-icons">headset</i>
                 <p>Headphones Recommended</p>
             </div>
-            <div class="container info-container">
+            <div class="container info-container" id="info-container">
                 <div class="row">
                     <div class="col">
                         <h1 class="w">An interactive tour of the modern space race</h1>
                         <p class="w">Found your company to begin your trip to Mars.</p>
                         </br>
-                        <button class="select-company-button" id="blueorigin-button">
-                            <h4 class="w">Blue Origin</h4>
-                            <p class="w">CEO: Jeff Besos</p>
-                        </button>
-                        <br/>
-                        <br/>
-                        <button class="select-company-button" id="spacex-button">
-                            <h4 class="w">SpaceX</h4>
-                            <p class="w">CEO: Elon Musk</p>
+                        <div id="select-ceo-buttons">
+                            <button class="select-company-button" id="blueorigin-button">
+                                <h4 class="w">Blue Origin</h4>
+                                <p class="w">CEO: Jeff Besos</p>
+                            </button>
+                            <br/>
+                            <br/>
+                            <button class="select-company-button" id="spacex-button">
+                                <h4 class="w">SpaceX</h4>
+                                <p class="w">CEO: Elon Musk</p>
+                            </button>
+                        </div>
+                        <button id="countdown-button">
+                            <h4 class="w">COUNTDOWN</h4>
                         </button>
                     </div>
                     <div class="col">
@@ -57,6 +61,7 @@
             
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/shooting-star-demo.js"></script>
 </html>
