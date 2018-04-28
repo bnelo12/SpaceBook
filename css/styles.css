@@ -1,8 +1,24 @@
+body {
+    background-color: black !important;
+}
+
 #player-select-page {
-    height: 100vh;
-    margin: 0;
+    background-color: black;
+}
+
+#exposition-page {
+    background-color: black;
+}
+
+#player-select-page .background-image {
     background: url('../img/select-page-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
+}
+
+.full-screen {
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
 }
