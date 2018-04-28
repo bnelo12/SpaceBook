@@ -82,8 +82,8 @@ audio {
 }
 
 #falcon-heavy-logo-page {
-    height: 100%;
-    bottom: 0px;
+    height: 600px;
+    bottom: -35px;
     right: 100px;
     position: absolute;
 }

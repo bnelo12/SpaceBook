@@ -27,10 +27,13 @@ var zoom_glen = function() {
 
 var countdown = function() {
     $('body').append('<audio autoplay="true" src="audio/launch-audio.mp3"></audio>');
-    $('#logo-page').velocity({transform: "translateY(1000px)"}, {duration: 5000, delay: 12000});
+    $('#logo-page').velocity({transform: "translateY(2000px)"}, {duration: 8000, delay: 12000});
     if (app.selected_pilot == 2) {
-        $('#falcon-heavy-logo-page').velocity({bottom: "2000px"}, {duration: 5000, delay: 12000});
+        setTimeout(function(){
+            $('#falcon-heavy-logo-page').attr('src', 'img/falcon-heavy-fire.png');
+        }, 9000);
+        $('#falcon-heavy-logo-page').velocity({bottom: "4000px"}, {duration: 8000, delay: 12000});
     } else {
-        $('#new-shepard-logo-page').velocity({bottom: "2000px"}, {duration: 5000, delay: 12000});
+        $('#new-shepard-logo-page').velocity({bottom: "4000px"}, {duration: 8000, delay: 12000})
     }
 }
