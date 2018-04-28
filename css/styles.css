@@ -51,6 +51,13 @@ body {
     position: absolute;
 }
 
+#new-shepard-logo-page {
+    height: 40%;
+    bottom: 0px;
+    right: 300px;
+    position: absolute;
+}
+
 #logo-page-header {
     width: 100vw;
     margin: 0;
