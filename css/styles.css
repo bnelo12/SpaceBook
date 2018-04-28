@@ -7,17 +7,48 @@ body {
 }
 
 #logo-page {
-    background-color: #e9ebee;
+    background-color: #4a65a0;
 }
 
 #logo {
     position: absolute;
     left: 110px;
-    width: 200px;
+}
+
+.select-company-button {
+    padding: 40px;
+    border-radius: 120px;
+    background-color: transparent;
+}
+
+#starfield {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 75%;
 }
 
 .info-container {
     margin-top: 30px;
+}
+
+.select-company-button {
+    background-color: none;
+}
+
+#rocket-select {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    height: 75%;
+    width: 60%;
+}
+
+#falcon-heavy-logo-page {
+    height: 100%;
+    bottom: 0px;
+    right: 100px;
+    position: absolute;
 }
 
 #logo-page-header {
@@ -39,8 +70,19 @@ body {
     background-position: center center; 
 }
 
+#rocket-select {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    height: 75%
+}
+
 .full-screen {
     height: 100vh;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.w {
+    color: white;
 }
