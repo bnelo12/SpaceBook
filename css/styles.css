@@ -108,6 +108,7 @@ audio {
 #exposition-page {
     background-color: black;
     display: none;
+    background: url("../img/star-background.jpg");
 }
 
 #rocket-select {
@@ -121,6 +122,10 @@ audio {
     position: absolute;
     bottom: 0px;
     transform: translateY(-50wh);
+}
+
+#elon-tesla {
+    display: none;
 }
 
 .full-screen {

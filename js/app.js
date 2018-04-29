@@ -42,8 +42,17 @@ var countdown = function() {
 }
 
 var display_page_2 = function() {
-    $('#exposition-page').css('display', 'block');
     $('#logo-page').css('display', 'none');
+    $('#exposition-page').velocity({'opacity': 0}, { duration: 0 })
+    .velocity({'opacity': 1}, { duration: 1000 });
+    $('#exposition-page').css('display', 'block');
     $('#earth-image').velocity({transform: "translateY(50vh)"}, {duration: 0})
-    .velocity({transform: "translateY(0)"}, {duration: 1500})
+    .velocity({transform: "translateY(0)"}, {duration: 3000, complete: animate_tesla})
+}
+
+var animate_tesla = function() {
+    $('#elon-tesla').css('display', 'block');
+    $('#elon-tesla').velocity({transform: "translateY(40vh) translateX(-10)"}, {duration: 0})
+    .velocity({transform: 'translateY(20vh) translateX(50vw)'}, {duration: 4000, delay: 600})
+    .velocity({transform: 'translateY(40vh) translateX(110vw)'}, {duration: 4000})
 }
