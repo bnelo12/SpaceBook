@@ -22,3 +22,126 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+#ship-quiz-page {
+
+    width: 100%;
+    position: relative;
+    background: url('../img/animatedGoodStuff.gif');
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+
+.quiz {
+    text-align: center;
+    background: url('../img/terminal.png');
+    background-size:cover;
+    height: 20rem;
+    width:80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle'
+  }
+
+.quiz-content{
+
+    position: relative;
+}
+
+.quiz p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    line-height: 60px;
+    font-size: 2.5rem;
+    color: green;
+
+
+    -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
+    animation: 0.5s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.answer-buttons{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
+}
+
+.quiz button:focus {outline:0;}
+
+.quiz .answer-buttons button{
+    color:white;
+    background-color: transparent;
+    border: none;
+    margin: 2rem;
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  #scoreboard{
+      color :white;
+      margin-left: 2rem;
+  }
+
+  #scoreboard p{
+   display: inline-block;
+}
+
+.start-button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    font-size: 2rem;
+    -webkit-animation: 2s ease 0s normal forwards 1 fadein;
+    animation: 2s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+ 
+.hide {
+    opacity:0;
+    height:0;
+    margin:0;
+}
+    
