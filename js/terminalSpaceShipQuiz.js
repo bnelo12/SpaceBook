@@ -1,13 +1,13 @@
 // Enter Questions in Array Below VVV
 var shipQuiz = [
     // Enter first one manually too in html
-    {question:'What shape are black holes?', answer:"spherical", wrong:"funnel-shaped" },
-    {question:'The asteroid belt is dangereous for our spaceships', answer:"No", wrong:"Yes" },
-    {question:'There is no gravity in space', answer:"No", wrong:"Yes" },
-    {question:'Jupiter circles the sun ', answer:"No", wrong:"Yes" },
-    {question:'The earth is a perfect sphere', answer:"No", wrong:"Yes" },
-    {question:'We will freeze if exposed to space', answer:"No", wrong:"Yes" },
-    {question:'There can be fires/explosions in space', answer:"No", wrong:"Yes" }
+    {question:'What shape are black holes?', answer:"Spherical", wrong:"Funnel-shaped" },
+    {question:'The asteroid belt is dangerous for our spaceships', answer:"False", wrong:"True" },
+    {question:'There is no gravity in space', answer:"False", wrong:"True" },
+    {question:'Jupiter circles the sun ', answer:"False", wrong:"True" },
+    {question:'The earth is a perfect sphere', answer:"False", wrong:"True" },
+    {question:'We will freeze if exposed to space', answer:"False", wrong:"True" },
+    {question:'There can be fires/explosions in space', answer:"False", wrong:"True" }
 ];
 
 var muskScore = 0;
@@ -32,7 +32,6 @@ function correctAnswer(id,crntQ){
 
 
  function startQuiz(id){
-     console.log("click shiy");
     document.getElementById(id).className = "hide";
     document.getElementById('answer-buttons').className = "answer-buttons";
     document.getElementById('quiz-answer-1').className = "-1";
@@ -60,6 +59,13 @@ function nextQuestion(id){
         // if all questions done
 
        if (shipQuiz.length-1 === currentQuestion){
+
+
+         document.getElementById('ship-quiz-question').innerHTML = "Great job!";
+         document.getElementById('ship-quiz-question').className = "start-button";
+         document.getElementById('quiz-answer-1').innerHTML = "Your Score: " + muskScore;
+         document.getElementById('quiz-answer-2').innerHTML = "Space Opponent: " + bezosScore;
+
            // transition to next game
 
         //    document.getElementById('quiz-answer-1').className = "0";
