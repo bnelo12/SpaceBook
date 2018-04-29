@@ -1,20 +1,131 @@
 body {
     background-color: black !important;
+    overflow: hidden;
+}
+
+audio {
+    display: none;
 }
 
 #player-select-page {
     background-color: black;
 }
 
-#exposition-page {
-    background-color: black;
+#logo-page {
+    background-color: #4a65a0;
+    overflow: visible;
 }
 
-#player-select-page .background-image {
-    background: url('../img/select-page-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
+#logo {
+    position: absolute;
+    left: 110px;
+}
+
+#countdown-button {
+    padding: 40px;
+    border-radius: 120px;
+    background-color: transparent;
+    opacity: 0;
+    transition:.5s;
+}
+
+#countdown-button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.select-company-button {
+    padding: 40px;
+    border-radius: 120px;
+    background-color: transparent;
+}
+
+.select-company-button:hover {
+    cursor: pointer;
+}
+
+#starfield {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 75%;
+}
+
+#shooting-star-demo {
+    position: absolute;
+    top: 0px;
+    left: 0px;;
+    width: 100vw;
+    height: 100vh;
+}
+
+.info-container {
+    margin-top: 30px;
+}
+
+.select-company-button {
+    background-color: none;
+}
+
+#rocket-select {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    height: 75%;
+    width: 60%;
+}
+
+#headphone-reccomended-icon {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    color: white;
+    text-align: center;
+}
+
+#falcon-heavy-logo-page {
+    height: 600px;
+    bottom: -25px;
+    right: 100px;
+    position: absolute;
+}
+
+#new-shepard-logo-page {
+    height: 100%;
+    bottom: -35px;
+    right: 300px;
+    position: absolute;
+}
+
+#logo-page-header {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    background-color: transparent;
+}
+
+#exposition-page {
+    background-color: black;
+    display: none;
+    background: url("../img/star-background.jpg");
+}
+
+#rocket-select {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    height: 75%
+}
+
+#earth-image {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(-50wh);
+}
+
+#elon-tesla {
+    display: none;
 }
 
 .full-screen {
@@ -138,10 +249,12 @@ body {
     100% { opacity:1; }
 }
 
- 
+
 .hide {
     opacity:0;
     height:0;
     margin:0;
 }
-    
+.w {
+    color: white;
+}

@@ -2,23 +2,64 @@
 <html lang="en">
     <head>
         <title>Spacebook</title>
-        <link rel="stylesheet" href="css/styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body bgcolor="#000000">
-        <div class="container-fluid" id="logo-page">
-        
-        </div>
-        <!-- Player Select Page -->
-        <div class="container-fluid full-screen" id="player-select-page">
-            <div class="background-image full-screen"></div>
+    <body>
+        <audio autoplay="true" src="audio/ambient-background.mp3"></audio>
+        <div class="container-fluid full-screen" id="logo-page">
+            <canvas id="shooting-star-demo"></canvas>
+            <nav class="navbar navbar-dark" id="logo-page-header">
+                <a class="navbar-brand" id="logo" href="#">
+                    <img src="img/theSpacebook-logo.png" width="300px">
+                </a>
+            </nav>
+            <div id="rocket-select">
+                <img src="img/falcon-heavy.png" id="falcon-heavy-logo-page"/>
+                <img src="img/new-glenn.png" id="new-shepard-logo-page"/>
+            </div>
+            <div id="headphone-reccomended-icon">
+                <i class="material-icons">headset</i>
+                <p>Headphones Recommended</p>
+            </div>
+            <div class="container info-container" id="info-container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="w">An interactive tour of the modern space race</h1>
+                        <p class="w">Found your company to begin your trip to Mars.</p>
+                        </br>
+                        <div id="select-ceo-buttons">
+                            <button class="select-company-button" id="blueorigin-button">
+                                <h4 class="w">Blue Origin</h4>
+                                <p class="w">CEO: Jeff Besos</p>
+                            </button>
+                            <br/>
+                            <br/>
+                            <button class="select-company-button" id="spacex-button">
+                                <h4 class="w">SpaceX</h4>
+                                <p class="w">CEO: Elon Musk</p>
+                            </button>
+                        </div>
+                        <button id="countdown-button">
+                            <h4 class="w">COUNTDOWN</h4>
+                        </button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Expostion Page -->
         <div class="container-fluid full-screen" id="exposition-page">
-            
+            <img src="img/world-cloud.png" id="earth-image" width="100%"/>
+            <img src="img/elon-tesla.png" id="elon-tesla" width="80px"/>
+        </div>
+        <!-- Lunar Lander -->
+        <div class="container-fluid full-screen" id="lunar-lander-page">
+
         </div>
 
         <!-- In Ship Quiz -->
@@ -40,9 +81,11 @@
                         </div>
                     </div>
                 <div>
-            </div>    
+            </div>
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.min.js"></script>
     <script src="js/app.js"></script>
     <script src="terminalSpaceShipQuiz.js"></script>
+      <script src="js/shooting-star-demo.js"></script>
 </html>
