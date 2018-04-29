@@ -59,6 +59,7 @@ function nextQuestion(id) {
       document.getElementById('ship-quiz-question').className = "start-button";
       document.getElementById('quiz-answer-1').innerHTML = "Your Score:  " + muskScore;
       document.getElementById('quiz-answer-2').innerHTML = "Space Opponent:  " + bezosScore;
+     document.getElementById('try-again-button').className = "try-again-button";
 
     } else {
       // sets Questions
@@ -80,7 +81,16 @@ function nextQuestion(id) {
     };
   }, time);
 
+}
   function tryAgain() {
+  document.getElementById('quiz-answer-1').className = "hide";
+  document.getElementById('quiz-answer-2').className = "hide";
+  document.getElementById('start-button').className = "start-button";
+  document.getElementById('ship-quiz-question').innerHTML = "Space Misconceptions Minigame";
+  document.getElementById('try-again-button').className = "hide";
+  muskScore = 0;
+  bezosScore = 0;
+  document.getElementById("score-1").innerHTML = muskScore;
+  document.getElementById("score-2").innerHTML = bezosScore;
 
-
- }
+}
