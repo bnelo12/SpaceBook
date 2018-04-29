@@ -108,7 +108,11 @@ audio {
 #exposition-page {
     background-color: black;
     display: none;
-    background: url("../img/star-background.jpg");
+    background: url("../img/star-background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #rocket-select {
@@ -134,16 +138,24 @@ audio {
     padding: 0 !important;
 }
 
+#factbook1 {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    display: none;
+}
+
 #ship-quiz-page {
     right: 0px;
     top: 0px;
     width: 100%;
     position: absolute;
     display: none;
-    background: url('../img/animatedGoodStuff.gif');
-    background-size:cover;
-    background-repeat:no-repeat;
-    /* background-color: red; */
+    background: url('../img/animatedGoodStuff.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 .quiz-container{
@@ -230,6 +242,13 @@ audio {
    display: inline-block;
 }
 
+#continue-button {
+    position: absolute;
+    left: 40vw;
+    bottom: 50px;
+    display: none;
+}
+
 .start-button{
     position: absolute;
     top: 60%;
@@ -267,3 +286,4 @@ audio {
 .w {
     color: white;
 }
+
