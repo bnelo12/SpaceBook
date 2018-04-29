@@ -3,10 +3,12 @@ var app = {
     selected_pilot: 0
 }
 
+
 $(document).ready(function() {
     $('#blueorigin-button').click(zoom_glen);
     $('#spacex-button').click(zoom_falcon);
     $('#countdown-button').click(countdown);
+    $('#continue-button').click(display_spaceshipQuiz);
 });
 
 var zoom_falcon = function() {
@@ -28,6 +30,8 @@ var zoom_glen = function() {
 var countdown = function() {
     $('body').append('<audio autoplay="true" src="audio/launch-audio.mp3"></audio>');
     $('#logo-page').velocity({transform: "translateY(2000px)"}, {duration: 8000, delay: 12000});
+    $('#countdown-button').css('display', 'none');
+    $('#factbook1').css('display', 'block');
     if (app.selected_pilot == 2) {
         setTimeout(function(){
             $('#falcon-heavy-logo-page').attr('src', 'img/falcon-heavy-fire.png');
@@ -54,8 +58,12 @@ var animate_tesla = function() {
     $('#elon-tesla').css('display', 'block');
     $('#elon-tesla')
     .velocity({transform: "translateY(40vh) translateX(-10)"}, {duration: 0})
-    // .velocity({transform: 'translateY(20vh) translateX(50vw)'}, {duration: 4000, delay: 600})
-    .velocity({transform: 'translateY(40vh) translateX(110vw)'}, {duration: 4000, complete: display_spaceshipQuiz})
+    .velocity({transform: 'translateY(20vh) translateX(50vw)'}, {duration: 4000, delay: 600})
+    .velocity({transform: 'translateY(40vh) translateX(110vw)'}, {duration: 4000, complete: show_continue_button})
+}
+
+var show_continue_button = function() {
+    $('#continue-button').css('display', 'block');
 }
 
 var  display_spaceshipQuiz = function() {
