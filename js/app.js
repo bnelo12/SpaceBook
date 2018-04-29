@@ -52,7 +52,14 @@ var display_page_2 = function() {
 
 var animate_tesla = function() {
     $('#elon-tesla').css('display', 'block');
-    $('#elon-tesla').velocity({transform: "translateY(40vh) translateX(-10)"}, {duration: 0})
+    $('#elon-tesla')
+    .velocity({transform: "translateY(40vh) translateX(-10)"}, {duration: 0})
     .velocity({transform: 'translateY(20vh) translateX(50vw)'}, {duration: 4000, delay: 600})
-    .velocity({transform: 'translateY(40vh) translateX(110vw)'}, {duration: 4000})
+    .velocity({transform: 'translateY(40vh) translateX(110vw)'}, {duration: 4000, complete: display_spaceshipQuiz})
+}
+
+var  display_spaceshipQuiz = function() {
+    $('#exposition-page').css('display', 'none');
+    $('#ship-quiz-page').css('display', 'block');
+
 }
